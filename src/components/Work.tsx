@@ -32,13 +32,13 @@ export default function Work() {
               <ProjectCard
                 title={"Hivemind"}
                 subtitle={"A new way to connect your service."}
-                imgSrc={"/thumbs/HAPI.jpg"}
+                imgSrc={"/humbs/HAPI.jpg"}
                 link={"https://github.com/CipherDay/hivemindAPI"}
               />
               <ProjectCard
                 title={"NOVAK"}
                 subtitle={"An award winning anti-spam ai."}
-                imgSrc={"/thumbs/NOVAKP.jpg"}
+                imgSrc={"/humbs/NOVAKP.jpg"}
                 link={"https://github.com/CipherDay/NOVAK_CE"}
               />
             </div>
@@ -49,13 +49,13 @@ export default function Work() {
               subtitle={
                 "A software for stores to keep track of installment and defect product."
               }
-              imgSrc={"/thumbs/ProdTrack.jpg"}
+              imgSrc={"/humbs/ProdTrack.jpg"}
               link={"https://github.com/CipherDay/ProdTrack"}
             />
             <ProjectCard
               title={"Simple House Easy Life"}
               subtitle={"A real estate mobile app."}
-              imgSrc={"/thumbs/SHEL.jpg"}
+              imgSrc={"/humbs/SHEL.jpg"}
               link={"https://github.com/CipherDay/SHEL_Prototype"}
             />
           </div>

@@ -248,83 +248,83 @@ const GridItemLogo = ({
 };
 
 const JAVALOGO = () => {
-  return <img src="/icons/Java.svg" alt="Java" className={"w-full h-full"} />;
+  return <img src="icons/Java.svg" alt="Java" className={"w-full h-full"} />;
 };
 
 const CSLOGO = () => {
-  return <img src="/icons/CS.svg" alt="CSharp" className={"w-full h-full"} />;
+  return <img src="icons/CS.svg" alt="CSharp" className={"w-full h-full"} />;
 };
 
 const CLOGO = () => {
-  return <img src="/icons/C.svg" alt="c" className={"w-full h-full"} />;
+  return <img src="icons/C.svg" alt="c" className={"w-full h-full"} />;
 };
 
 const PYTHONLOGO = () => {
   return (
-    <img src="/icons/Python.svg" alt="python" className={"w-full h-full"} />
+    <img src="icons/Python.svg" alt="python" className={"w-full h-full"} />
   );
 };
 
 const FLUTTERLOGO = () => {
   return (
-    <img src="/icons/Flutter.svg" alt="flutter" className={"w-full h-full"} />
+    <img src="icons/Flutter.svg" alt="flutter" className={"w-full h-full"} />
   );
 };
 const DARTRLOGO = () => {
-  return <img src="/icons/Dart.svg" alt="dart" className={"w-full h-full"} />;
+  return <img src="icons/Dart.svg" alt="dart" className={"w-full h-full"} />;
 };
 const NETLOGO = () => {
-  return <img src="/icons/NET.svg" alt=".net" className={"w-full h-full"} />;
+  return <img src="icons/NET.svg" alt=".net" className={"w-full h-full"} />;
 };
 const DJLOGO = () => {
   return (
-    <img src="/icons/Django.svg" alt="Django" className={"w-full h-full"} />
+    <img src="icons/Django.svg" alt="Django" className={"w-full h-full"} />
   );
 };
 const REACTLOGO = () => {
-  return <img src="/icons/React.svg" alt="React" className={"w-full h-full"} />;
+  return <img src="icons/React.svg" alt="React" className={"w-full h-full"} />;
 };
 const NEXTLOGO = () => {
-  return <img src="/icons/Next.svg" alt="NextJs" className={"w-full h-full"} />;
+  return <img src="icons/Next.svg" alt="NextJs" className={"w-full h-full"} />;
 };
 const JSLOGO = () => {
   return (
-    <img src="/icons/JS.svg" alt="Javascript" className={"w-full h-full"} />
+    <img src="icons/JS.svg" alt="Javascript" className={"w-full h-full"} />
   );
 };
 const TSLOGO = () => {
   return (
-    <img src="/icons/TS.svg" alt="Typescript" className={"w-full h-full"} />
+    <img src="icons/TS.svg" alt="Typescript" className={"w-full h-full"} />
   );
 };
 const PGLOGO = () => {
-  return <img src="/icons/PG.svg" alt="Pgsql" className={"w-full h-full"} />;
+  return <img src="icons/PG.svg" alt="Pgsql" className={"w-full h-full"} />;
 };
 const DOCKERLOGO = () => {
   return (
-    <img src="/icons/Docker.svg" alt="Docker" className={"w-full h-full"} />
+    <img src="icons/Docker.svg" alt="Docker" className={"w-full h-full"} />
   );
 };
 const PYTORCHLOGO = () => {
   return (
-    <img src="/icons/Pytorch.svg" alt="Pytorch" className={"w-full h-full"} />
+    <img src="icons/Pytorch.svg" alt="Pytorch" className={"w-full h-full"} />
   );
 };
 const EXJSLOGO = () => {
   return (
-    <img src="/icons/EXJS.svg" alt="ExpressJs" className={"w-full h-full"} />
+    <img src="icons/EXJS.svg" alt="ExpressJs" className={"w-full h-full"} />
   );
 };
 const FIREBASELOGO = () => {
   return (
-    <img src="/icons/Firebase.svg" alt="Firebase" className={"w-full h-full"} />
+    <img src="icons/Firebase.svg" alt="Firebase" className={"w-full h-full"} />
   );
 };
 const NODELOGO = () => {
-  return <img src="/icons/Node.svg" alt="Node" className={"w-full h-full"} />;
+  return <img src="icons/Node.svg" alt="Node" className={"w-full h-full"} />;
 };
 const MDBLOGO = () => {
   return (
-    <img src="/icons/MongoDB.svg" alt="MongoDB" className={"w-full h-full"} />
+    <img src="icons/MongoDB.svg" alt="MongoDB" className={"w-full h-full"} />
   );
 };
