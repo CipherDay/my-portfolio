@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: Alto;
+    src: url("assets/fonts/Aalto-Display-Font-Family/Aalto-Display.otf") format("opentype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Pangram-Regular;
+    src: url("assets/fonts/Pangram-Sans-Font-Family/Pangram-Regular.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: Pangram-Bold;
+    src: url("assets/fonts/Pangram-Sans-Font-Family/Pangram-Bold.otf") format("opentype");
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: Pangram-Black;
+    src: url("assets/fonts/Pangram-Sans-Font-Family/Pangram-Black.otf") format("opentype");
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: Pangram-Light;
+    src: url("assets/fonts/Pangram-Sans-Font-Family/Pangram-Light.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@theme{
+    --font-heading-family: Alto,sans-serif;
+    --font-body-family: Pangram-Regular,sans-serif;
+    --font-body-black-family: Pangram-Black,sans-serif;
+    --font-body-bold-family: Pangram-Bold,sans-serif;
+    --font-body-light-family: Pangram-Light,sans-serif;
+
+}
