@@ -279,6 +279,20 @@ const GridItemLogo = ({
           easings: "easeInOut",
         },
       }}
+      whileTap={{
+        boxShadow: `0px 0px 10px 3px ${glowColor}`,
+        transition: {
+          duration: 0.3,
+          easings: "easeInOut",
+        },
+      }}
+      whileFocus={{
+        boxShadow: `0px 0px 10px 3px ${glowColor}`,
+        transition: {
+          duration: 0.3,
+          easings: "easeInOut",
+        },
+      }}
       className={"grid place-content-center cursor-pointer" + " " + className}
     >
       {children}
