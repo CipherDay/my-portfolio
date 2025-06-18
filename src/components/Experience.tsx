@@ -242,7 +242,6 @@ const GridItem = ({
 }) => {
   const { breakPoint } = useWindowSize();
   const size = boxSizeCalculator(breakPoint);
-  document.title = breakPoint;
   return (
     <div
       ref={ref}
