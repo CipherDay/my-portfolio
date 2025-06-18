@@ -19,18 +19,25 @@ export default function Footer() {
             "w-full max-w-7xl px-5 xl:px-0 mx-auto border-t-3 pt-20 border-gray-200"
           }
         >
-          <div className={"flex flex-col gap-5 xl:flex-row  w-full"}>
+          <div className={"flex flex-col gap-5 sm:flex-row  w-full"}>
             <div className={"grow flex flex-col w-full gap-4"}>
               <p
                 className={
-                  "font-body-bold-family text-lg xl:text-3xl text-gray-500"
+                  "font-body-bold-family text-lg md:text-3xl text-gray-500"
                 }
               >
                 Let’s work together
               </p>
-              <p className={"font-body-bold-family text-xl xl:text-4xl "}>
+              <a
+                className={
+                  "font-body-bold-family text-xl md:text-2xl xl:text-4xl "
+                }
+                href={
+                  "mailto:abdarrahim.abdallah@gmail.com?subject=Let's%20Work"
+                }
+              >
                 abdarrahim.abdallah@gmail.com
-              </p>
+              </a>
             </div>
             <div className={"grow-0 flex w-1/2 justify-end-safe gap-10"}>
               <div className={"flex flex-col gap-3"}>

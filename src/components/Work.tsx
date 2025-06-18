@@ -28,7 +28,7 @@ export default function Work() {
             </motion.div>
           </div>
           <div className={"fex flex-col w-full gap-10"}>
-            <div className={"flex flex-col xl:flex-row w-full gap-x-20"}>
+            <div className={"flex flex-col sm:flex-row w-full gap-x-20"}>
               <ProjectCard
                 title={"Hivemind"}
                 subtitle={"A new way to connect your service."}
@@ -43,7 +43,7 @@ export default function Work() {
               />
             </div>
           </div>
-          <div className={"flex flex-col xl:flex-row w-full gap-x-20"}>
+          <div className={"flex flex-col sm:flex-row w-full gap-x-20"}>
             <ProjectCard
               title={"ProdTrack"}
               subtitle={
@@ -167,8 +167,8 @@ const ProjectCard = ({
           backgroundPosition: "center",
         }}
       ></motion.div>
-      <p className={"font-body-bold-family xl:text-2xl"}>{title}</p>
-      <p className={"font-body-family text-gray-700 text-sm xl:text-base"}>
+      <p className={"font-body-bold-family sm:text-2xl"}>{title}</p>
+      <p className={"font-body-family text-gray-700 text-sm sm:text-base"}>
         {subtitle}
       </p>
     </motion.a>

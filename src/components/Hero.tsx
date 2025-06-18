@@ -1,10 +1,20 @@
-import { motion } from "motion/react";
+import { motion, AnimatePresence } from "motion/react";
 import { useLenis } from "lenis/react";
+import { breakPointEvaluate, useWindowSize } from "../hooks/WindowHook.ts";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { IoMdClose } from "react-icons/io";
+
+import { useState } from "react";
+import * as React from "react";
 
 const fadeIn = {
   initial: { opacity: 0 },
   animate: {
     opacity: 1,
+    transition: { duration: 0.5, delay: 0.5, easings: "easeIn" },
+  },
+  exit: {
+    opacity: 0,
     transition: { duration: 0.5, delay: 0.5, easings: "easeIn" },
   },
 };
@@ -36,7 +46,7 @@ const HeroLanding = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ easings: "easeIn", delay: 0.5, duration: 0.3 }}
           className={
-            "font-body-light-family text-lg leading-tight xl:text-xl pt-5 xl:max-w-1/2 max-w-full overflow-hidden"
+            "font-body-light-family leading-tight text-lg sm:text-xl pt-5 md:max-w-1/2 max-w-full overflow-hidden"
           }
         >
           Hey, I’m Abderrahim, a Software / Web Developer delivering top-tier
@@ -70,7 +80,7 @@ const FancyText = ({ text }: { text: string }) => {
               duration: DURATION,
             }}
             className={
-              " inline-block font-heading-family font-bold tracking-wide text-6xl xl:text-[10rem]"
+              " inline-block font-heading-family font-bold tracking-wide text-7xl sm:text-9xl md:text-[10rem]"
             }
           >
             {letter}
@@ -83,6 +93,8 @@ const FancyText = ({ text }: { text: string }) => {
 
 // ---Navbar---
 const NavBar = () => {
+  const { width } = useWindowSize();
+
   return (
     <>
       <header className={"w-full h-[var(--navbar-height)] py-5"}>
@@ -93,15 +105,119 @@ const NavBar = () => {
             animate="animate"
             className={"grow"}
           >
-            <Logo className={"xl:w-20 w-10 fill-black"} />
+            <Logo className={"sm:w-20 w-14  fill-black"} />
           </motion.div>
-          <NavMenu />
+          {breakPointEvaluate(width, "sm") ? <NavMenu /> : <BurgerNav />}
         </section>
       </header>
     </>
   );
 };
 
+const BurgerNav = () => {
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+
+  return (
+    <>
+      {isOpen ? (
+        <motion.div
+          variants={fadeIn}
+          initial="initial"
+          animate="animate"
+          exit="exit"
+          className={"z-40 fixed right-5 "}
+        >
+          <IoMdClose
+            className={"w-10 h-10  text-amber-500"}
+            onClick={() => setIsOpen(false)}
+          />
+        </motion.div>
+      ) : (
+        <motion.div
+          variants={fadeIn}
+          initial="initial"
+          animate="animate"
+          exit="exit"
+          className={"z-40 fixed right-5"}
+        >
+          <GiHamburgerMenu
+            className={"w-10 h-10 text-amber-500"}
+            onClick={() => setIsOpen(true)}
+          />
+        </motion.div>
+      )}
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            initial={{ x: "100%" }}
+            animate={{ x: 0 }}
+            exit={{ x: "100%" }}
+            transition={{ easings: "easeInOut" }}
+            className={
+              "fixed inset-0 bg-black z-30 flex flex-col p-5 pt-20 gap-10"
+            }
+          >
+            <BurgerNavLink setIsOpen={setIsOpen} targetId={"#home"}>
+              Home
+            </BurgerNavLink>
+            <BurgerNavLink setIsOpen={setIsOpen} targetId={"#experience"}>
+              Experience
+            </BurgerNavLink>
+            <BurgerNavLink setIsOpen={setIsOpen} targetId={"#work"}>
+              Work
+            </BurgerNavLink>
+            <BurgerNavLink setIsOpen={setIsOpen} targetId={"#service"}>
+              Services
+            </BurgerNavLink>
+            <BurgerNavLink setIsOpen={setIsOpen} targetId={"#contact"}>
+              Contact
+            </BurgerNavLink>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </>
+  );
+};
+const BurgerNavLink = ({
+  children,
+  targetId,
+  setIsOpen,
+}: {
+  children: string;
+  targetId: string;
+  setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
+}) => {
+  const lenis = useLenis();
+
+  const scrollTo = (target?: string) => {
+    if (!lenis || !target) return;
+    setIsOpen(false);
+
+    lenis.scrollTo(target, {
+      duration: 1,
+      easing: (t) => Math.sqrt(1 - Math.pow(t - 1, 2)),
+      // onComplete: () => ,
+    });
+  };
+  return (
+    <motion.div
+      onClick={() => scrollTo(targetId)}
+      variants={fadeIn}
+      initial="initial"
+      animate="animate"
+      exit={{
+        opacity: 0,
+        transition: {
+          delay: 0,
+          duration: 0.1,
+        },
+      }}
+      className={" w-full"}
+    >
+      <p className={"font-body-bold-family text-white text-5xl"}>{children}</p>
+    </motion.div>
+  );
+};
 const NavLink = ({ text, idTarget }: { text: string; idTarget: string }) => {
   const lenis = useLenis();
 
@@ -120,7 +236,7 @@ const NavLink = ({ text, idTarget }: { text: string; idTarget: string }) => {
         initial="initial"
         animate="animate"
         className={
-          "font-body-family text-black xl:text-xl text-base cursor-pointer hover:text-gray-600 transition-colors ease-in-out duration-200 hidden xl:block"
+          "font-body-family text-black text-xl cursor-pointer hover:text-gray-600 transition-colors ease-in-out duration-200 "
         }
         onClick={() => scrollTo(idTarget)}
       >
