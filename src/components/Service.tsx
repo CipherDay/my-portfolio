@@ -110,6 +110,12 @@ const ServiceCard = ({
         whileHover={{
           boxShadow: "10px 10px 41px -1px rgba(0,0,0,0.45)",
         }}
+        whileTap={{
+          boxShadow: "10px 10px 41px -1px rgba(0,0,0,0.45)",
+        }}
+        whileFocus={{
+          boxShadow: "10px 10px 41px -1px rgba(0,0,0,0.45)",
+        }}
         className={
           "w-full rounded-md border-[1px] border-neutral-200 cursor-pointer group"
         }
@@ -128,7 +134,7 @@ const ServiceCard = ({
           </p>
           <div
             className={
-              "rounded-full h-10 p-2  grid place-content-center w-10 group-hover:w-30 group-hover:bg-black overflow-hidden transition-all ease-in-out duration-300"
+              "rounded-full h-10 p-2  grid place-content-center w-10 group-hover:w-30 group-hover:bg-black group-focus:w-30 group-focus:bg-black overflow-hidden transition-all ease-in-out duration-300"
             }
             style={{
               backgroundColor: color,
