@@ -63,6 +63,12 @@ const Ticker = ({
         whileHover={{
           opacity: 1,
         }}
+        whileTap={{
+          opacity: 1,
+        }}
+        whileFocus={{
+          opacity: 1,
+        }}
         className={
           "absolute inset-0 z-11 grid place-content-center opacity-0 bg-white/50"
         }
@@ -111,7 +117,7 @@ const FENTECHLOGO = () => {
     <div
       className={"w-full h-full"}
       style={{
-        backgroundImage: 'url("/logos/FT.svg")',
+        backgroundImage: 'url("logos/FT.svg")',
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center center",
       }}
@@ -123,25 +129,25 @@ const ONELOGO = () => {
     <div
       className={"w-full h-full"}
       style={{
-        backgroundImage: 'url("/logos/ONE.svg")',
+        backgroundImage: 'url("logos/ONE.svg")',
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center center",
       }}
     ></div>
   );
-  // <img className={"w-full h-full"} src="/logos/ONE.svg" alt="OneFit" />;
+  // <img className={"w-full h-full"} src="logos/ONE.svg" alt="OneFit" />;
 };
 const MMLOGO = () => {
   return (
     <div
       className={"w-full h-full"}
       style={{
-        backgroundImage: 'url("/logos/Minimoon.svg")',
+        backgroundImage: 'url("logos/Minimoon.svg")',
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center center",
       }}
     ></div>
-    // <img className={"w-full h-full"} src="/logos/Minimoon.svg" alt="Minimoon" />
+    // <img className={"w-full h-full"} src="logos/Minimoon.svg" alt="Minimoon" />
   );
 };
 const ATLOGO = () => {
@@ -149,7 +155,7 @@ const ATLOGO = () => {
     <div
       className={"w-full h-full"}
       style={{
-        backgroundImage: 'url("/logos/AT.svg")',
+        backgroundImage: 'url("logos/AT.svg")',
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center center",
       }}
