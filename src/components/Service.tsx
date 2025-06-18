@@ -142,7 +142,7 @@ const ServiceCard = ({
           >
             <p
               className={
-                "font-body-family text-sm text-white opacity-0 group-hover:opacity-100 transition-all ease-in-out duration-150 delay-150 text-nowrap"
+                "font-body-family text-sm text-white opacity-0 group-hover:opacity-100 group-focus:opacity-100 transition-all ease-in-out duration-150 delay-150 text-nowrap"
               }
             >
               Contact Me

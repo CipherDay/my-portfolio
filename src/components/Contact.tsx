@@ -165,6 +165,8 @@ const Form = () => {
       <motion.button
         initial="reset"
         whileHover="hoverd"
+        whileTap="hoverd"
+        whileFocus="hoverd"
         className={
           "w-full p-3 bg-white border-2 border-black  overflow-hidden relative cursor-pointer"
         }
