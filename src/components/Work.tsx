@@ -153,6 +153,8 @@ const ProjectCard = ({
       href={link}
       initial={"initial"}
       whileHover={"animate"}
+      whileTap={"animate"}
+      whileFocus={"animate"}
       target={"_blank"}
       className={"w-full flex flex-col gap-y-2 pb-10 cursor-pointer"}
     >
