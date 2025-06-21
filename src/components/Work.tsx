@@ -33,7 +33,7 @@ export default function Work() {
                 title={"Hivemind"}
                 subtitle={"A new way to connect your service."}
                 imgSrc={"thumbs/HAPI.jpg"}
-                link={"https://github.com/CipherDay/hivemindAPI"}
+                link={"https://github.com/CipherDay/hivemindAPI_PB"}
               />
               <ProjectCard
                 title={"NOVAK"}
