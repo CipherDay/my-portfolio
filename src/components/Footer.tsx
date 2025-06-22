@@ -62,7 +62,13 @@ export default function Footer() {
                 <FooterLink url={"https://instagram.com/Cipher_day/"}>
                   Instagram
                 </FooterLink>
-                <FooterLink>Linkedin</FooterLink>
+                <FooterLink
+                  url={
+                    "https://www.linkedin.com/in/abderrahim-abdallah-152283371/"
+                  }
+                >
+                  Linkedin
+                </FooterLink>
               </div>
             </div>
           </div>

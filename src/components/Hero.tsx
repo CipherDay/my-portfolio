@@ -38,8 +38,8 @@ const HeroLanding = () => {
         id={"home"}
         className="xl:max-w-7xl p-5 xl:p-0 w-full mx-auto h-[calc(100vh_-_var(--navbar-height))] leading-none flex flex-col justify-center"
       >
-        <FancyText text={"Software & Web"} />
-        <FancyText text={"Developer"} />
+        <FancyText text={"Full-Stack"} />
+        <FancyText text={"Engineer"} />
 
         <motion.p
           initial={{ opacity: 0, x: 20 }}
@@ -49,7 +49,7 @@ const HeroLanding = () => {
             "font-body-light-family leading-tight text-lg sm:text-xl pt-5 md:max-w-1/2 max-w-full overflow-hidden"
           }
         >
-          Hey, I’m Abderrahim, a Software / Web Developer delivering top-tier
+          Hey, I’m Abderrahim, a Full-Stack Engineer delivering top-tier
           Websites, SaaS, Mobile experiences, and good vibes for almost a
           decade.
         </motion.p>
@@ -80,7 +80,7 @@ const FancyText = ({ text }: { text: string }) => {
               duration: DURATION,
             }}
             className={
-              " inline-block font-heading-family font-bold tracking-wide text-7xl sm:text-9xl md:text-[10rem]"
+              " inline-block font-heading-family font-bold tracking-wider text-8xl sm:text-9xl md:text-[10rem]"
             }
           >
             {letter}
