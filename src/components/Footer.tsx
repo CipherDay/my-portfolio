@@ -69,6 +69,20 @@ export default function Footer() {
                 >
                   Linkedin
                 </FooterLink>
+                <FooterLink
+                  url={
+                    "https://www.upwork.com/freelancers/~01e0d26777b847201a?mp_source=share"
+                  }
+                >
+                  Upwork
+                </FooterLink>
+                <FooterLink
+                  url={
+                    "https://europa.eu/europass/eportfolio/api/eprofile/shared-profile/abderrahim-abdallah/492607f5-42b3-4d82-9154-261231e873c7?view=html"
+                  }
+                >
+                  CV
+                </FooterLink>
               </div>
             </div>
           </div>
