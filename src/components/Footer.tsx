@@ -61,9 +61,7 @@ export default function Footer() {
                 </FooterLink>
 
                 <FooterLink
-                  url={
-                    "https://www.linkedin.com/in/abderrahim-abdallah-152283371/"
-                  }
+                  url={"https://www.linkedin.com/in/abderrahim-abdallah/"}
                 >
                   Linkedin
                 </FooterLink>
@@ -76,7 +74,7 @@ export default function Footer() {
                 </FooterLink>
                 <FooterLink
                   url={
-                    "https://europa.eu/europass/eportfolio/api/eprofile/shared-profile/abderrahim-abdallah/2f4b0003-090e-4cf9-9f64-51aeedfd6527?view=html"
+                    "https://europa.eu/europass/eportfolio/api/eprofile/shared-profile/abderrahim-abdallah/731a848a-2936-4a9a-ac4c-d97f13e824c1?view=html"
                   }
                 >
                   CV
