@@ -59,9 +59,7 @@ export default function Footer() {
                 <FooterLink url={"https://github.com/cipherDay/"}>
                   Github
                 </FooterLink>
-                <FooterLink url={"https://instagram.com/Cipher_day/"}>
-                  Instagram
-                </FooterLink>
+
                 <FooterLink
                   url={
                     "https://www.linkedin.com/in/abderrahim-abdallah-152283371/"
@@ -78,7 +76,7 @@ export default function Footer() {
                 </FooterLink>
                 <FooterLink
                   url={
-                    "https://europa.eu/europass/eportfolio/api/eprofile/shared-profile/abderrahim-abdallah/492607f5-42b3-4d82-9154-261231e873c7?view=html"
+                    "https://europa.eu/europass/eportfolio/api/eprofile/shared-profile/abderrahim-abdallah/2f4b0003-090e-4cf9-9f64-51aeedfd6527?view=html"
                   }
                 >
                   CV
